@@ -37,9 +37,10 @@ nav {
 }
 
 .logo-container img {
-    width: 300px; /* Taille officielle Google */
+    width: 500px; /* Logo plus grand */
     height: auto;
-  }
+    max-width: 100%;
+}
 
 
 main{
@@ -55,15 +56,47 @@ main img{
     height: 200px;
 }
 
+.search-bar {
+    width: 600px; /* Largeur fixe pour la barre de recherche */
+    max-width: 90%; /* Responsive */
+}
+
 input {
-    width: 600px;
+    width: 100%;
     padding: 14px 50px;
     border: 1px solid #dfe1e5;
     border-radius: 24px;
     font-size: 16px;
+    text-overflow: ellipsis; /* Montre les points de suspension si le texte est trop long */
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-.add img{
+.plus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.plus-icon-container {
+    background-color: #f0f0f0; /* Fond gris */
+    border-radius: 50px; /* Effet rounded */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.plus img{
+    margin-top:30px;
     width: 30px;
     height: 30px;
+    background-color: #f0f0f0; /* Fond gris */
+   
+}
+
+.add-text {
+    color: #5f6368;
+    font-size: 18px;
 }
